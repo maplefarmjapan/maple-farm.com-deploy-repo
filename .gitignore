@@ -1,0 +1,23 @@
+# Analytics Configuration (contains sensitive URLs)
+#analytics-config.js
+
+# Google Apps Script (contains Sheet IDs)
+#google-apps-script-production.js
+google-apps-script.js
+
+# Local development files
+.DS_Store
+*.log
+node_modules/
+.env
+.env.local
+
+# Backup files
+*.backup
+*~
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
