@@ -128,6 +128,7 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 min-height: 100vh;
+overflow-x: hidden;
 background-color: var(--bg-primary);
 color: var(--text-primary);
 transition: background-color 0.3s ease, color 0.3s ease;
@@ -152,6 +153,7 @@ border: none;
 .container {
 max-width: 1200px;
 width: 100%;
+min-width: 0;
 padding: 10px;
 box-sizing: border-box;
 background-color: var(--bg-secondary);
@@ -205,6 +207,7 @@ box-shadow: 0 2px 4px var(--shadow-color);
 section {
 padding: 60px 20px;
 margin: 20px 0;
+min-width: 0;
 background-color: var(--bg-section);
 border: 1px solid var(--border-color);
 box-shadow: 0 4px 8px var(--shadow-color);
@@ -396,6 +399,7 @@ transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 .carousel {
 position: relative;
 max-width: 100%;
+min-width: 0;
 overflow: hidden;
 margin: 0 auto;
 width: 100%;
@@ -576,7 +580,7 @@ Note: Prices may vary between platforms. We recommend booking directly for the b
 夏（7〜8月）は花畑と穏やかな気候。冬（12〜2月）はスキー、青い池のライトアップ、旭川冬まつりが楽しめます。</p><p><strong>文化スポット：</strong><br>
 アイヌ文化を紹介する旭川市博物館、試飲ができる男山酒造、北海道の伝統工芸品店などがあります。</p><p><strong>気候：</strong><br>
 夏の気温は15〜30°C。冬は-15〜+10°Cで、パウダースノーと青空の日が多くあります。</p><p><strong>薪ストーブ（冬季限定）：</strong><br>
-薪ストーブは冬季にご利用いただけます（1滞在につき別途10,000円）。ご利用前に、使用方法や燃やせる燃料などの利用規約への同意をお願いしています。</p></section><section id="faq"><a href="#top" class="back-to-top" title="ページ上部へ">⬆️</a><h2>よくあるご質問</h2><details><summary><strong>旭川空港からメイプルファームまでどのくらいですか？</strong></summary><p>車・タクシーでわずか5分です。空港からのタクシー料金は1,500円以下です。</p></details><details><summary><strong>滞在に車は必要ですか？</strong></summary><p>自由に観光するにはレンタカーがおすすめで、旭川空港で借りられます。タクシーや電動アシストのレンタサイクルも空港（5分）で利用できます。</p></details><details><summary><strong>青い池までどのくらいですか？</strong></summary><p>美瑛の有名な青い池までは車で約35〜40分です。冬期（10月下旬〜4月下旬）は日没から21時まで夜のライトアップが行われます（日程はご確認ください）。</p></details><details><summary><strong>キッチンはありますか？</strong></summary><p>はい。IHコンロ、ビルトインオーブン、電子レンジを備えたフルキッチンがあります。食料品や北海道の地元食材が買えるスーパーも車ですぐです。</p></details><details><summary><strong>ベストシーズンはいつですか？</strong></summary><p>夏（7〜8月）はラベンダーと花畑、冬（12〜2月）はパウダースノー、スキー、青い池のライトアップ、旭川冬まつりがおすすめです。</p></details><details><summary><strong>最寄りのスキー場はどこですか？</strong></summary><p>キャンモアスキービレッジまで20分、カムイスキーリンクスまで40分、日本屈指のロングシーズンを誇る旭岳まで45分です。</p></details><details><summary><strong>駐車場はありますか？</strong></summary><p>はい。無料の敷地内駐車場をご利用いただけます。</p></details><details><summary><strong>旭山動物園までどのくらいですか？</strong></summary><p>冬のペンギンの散歩で有名な旭山動物園までは車で約20分です。</p></details><details><summary><strong>薪ストーブ（暖炉）は使えますか？</strong></summary><p>はい。冬季限定で、1滞在につき別途10,000円でご利用いただけます。事前に使用方法や燃やせる燃料に関する利用規約への同意をお願いします。</p></details></section><p class="lang-switcher">🌐 <a href="/" style="color: #0066cc; text-decoration: none;">English</a> &middot; <strong>日本語</strong> &middot; <a href="/ko/" style="color: #0066cc; text-decoration: none;">한국어</a> &middot; <a href="/th/" style="color: #0066cc; text-decoration: none;">ไทย</a> &middot; <a href="/zh-cn/" style="color: #0066cc; text-decoration: none;">简体中文</a> &middot; <a href="/zh-tw/" style="color: #0066cc; text-decoration: none;">繁體中文</a></p><footer class="footer"><p>お問い合わせ： <a href="mailto:info@maple-farm.com" style="color: #0066cc; text-decoration: none;">info@maple-farm.com</a></p><p>&copy; 2020-2026 Maple Farm&reg;. All rights reserved.</p><p style="font-size: 12px; opacity: 0.75; margin-top: 6px;">Build 511036c (2026-07-09)</p></footer></div></div><script>
+薪ストーブは冬季にご利用いただけます（1滞在につき別途10,000円）。ご利用前に、使用方法や燃やせる燃料などの利用規約への同意をお願いしています。</p></section><section id="faq"><a href="#top" class="back-to-top" title="ページ上部へ">⬆️</a><h2>よくあるご質問</h2><details><summary><strong>旭川空港からメイプルファームまでどのくらいですか？</strong></summary><p>車・タクシーでわずか5分です。空港からのタクシー料金は1,500円以下です。</p></details><details><summary><strong>滞在に車は必要ですか？</strong></summary><p>自由に観光するにはレンタカーがおすすめで、旭川空港で借りられます。タクシーや電動アシストのレンタサイクルも空港（5分）で利用できます。</p></details><details><summary><strong>青い池までどのくらいですか？</strong></summary><p>美瑛の有名な青い池までは車で約35〜40分です。冬期（10月下旬〜4月下旬）は日没から21時まで夜のライトアップが行われます（日程はご確認ください）。</p></details><details><summary><strong>キッチンはありますか？</strong></summary><p>はい。IHコンロ、ビルトインオーブン、電子レンジを備えたフルキッチンがあります。食料品や北海道の地元食材が買えるスーパーも車ですぐです。</p></details><details><summary><strong>ベストシーズンはいつですか？</strong></summary><p>夏（7〜8月）はラベンダーと花畑、冬（12〜2月）はパウダースノー、スキー、青い池のライトアップ、旭川冬まつりがおすすめです。</p></details><details><summary><strong>最寄りのスキー場はどこですか？</strong></summary><p>キャンモアスキービレッジまで20分、カムイスキーリンクスまで40分、日本屈指のロングシーズンを誇る旭岳まで45分です。</p></details><details><summary><strong>駐車場はありますか？</strong></summary><p>はい。無料の敷地内駐車場をご利用いただけます。</p></details><details><summary><strong>旭山動物園までどのくらいですか？</strong></summary><p>冬のペンギンの散歩で有名な旭山動物園までは車で約20分です。</p></details><details><summary><strong>薪ストーブ（暖炉）は使えますか？</strong></summary><p>はい。冬季限定で、1滞在につき別途10,000円でご利用いただけます。事前に使用方法や燃やせる燃料に関する利用規約への同意をお願いします。</p></details></section><p class="lang-switcher">🌐 <a href="/" style="color: #0066cc; text-decoration: none;">English</a> &middot; <strong>日本語</strong> &middot; <a href="/ko/" style="color: #0066cc; text-decoration: none;">한국어</a> &middot; <a href="/th/" style="color: #0066cc; text-decoration: none;">ไทย</a> &middot; <a href="/zh-cn/" style="color: #0066cc; text-decoration: none;">简体中文</a> &middot; <a href="/zh-tw/" style="color: #0066cc; text-decoration: none;">繁體中文</a></p><footer class="footer"><p>お問い合わせ： <a href="mailto:info@maple-farm.com" style="color: #0066cc; text-decoration: none;">info@maple-farm.com</a></p><p>&copy; 2020-2026 Maple Farm&reg;. All rights reserved.</p><p style="font-size: 12px; opacity: 0.75; margin-top: 6px;">Build d1904c6 (2026-07-09)</p></footer></div></div><script>
 let currentSlide = 0;
 const slides = document.querySelectorAll('.carousel-images img');
 let imagesLoaded = new Set([0]); // First image is already loaded
